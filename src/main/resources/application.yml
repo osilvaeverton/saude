@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /saude
+spring:
+  application:
+    name: saude
+  datasource:
+    url: jdbc:mysql://localhost:3306/saude
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: none
+      use-new-id-generator-mappings: false
+    show-sql: false
+  main:
+    banner-mode: "off"
